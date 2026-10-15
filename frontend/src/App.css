@@ -1,0 +1,103 @@
+.home {
+  padding: 30px;
+}
+
+.home h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.pin-grid {
+  columns: 4 250px;
+  column-gap: 20px;
+}
+
+.pin-card {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pin-image {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+.pin-info {
+  padding: 10px 5px;
+}
+
+.pin-info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.pin-info p {
+  font-size: 14px;
+  color: #666;
+}
+.pin-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pin-actions button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  border: none;
+  padding: 8px 12px;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.like-button {
+  background-color: #f1f1f1;
+}
+
+.save-button {
+  background-color: #111;
+  color: white;
+}
+
+.pin-actions button:hover {
+  opacity: 0.8;
+}
+.pin-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.pin-card:hover {
+  transform: translateY(-4px);
+}
+
+.pin-image {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+.pin-card:hover .pin-image {
+  transform: scale(1.02);
+}
+.no-results {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #666;
+}

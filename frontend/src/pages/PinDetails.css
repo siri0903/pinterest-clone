@@ -1,0 +1,309 @@
+.pin-details {
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+/* Back button */
+
+.back-button {
+  border: none;
+  background: #f1f1f1;
+
+  padding: 10px 18px;
+
+  border-radius: 20px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-bottom: 25px;
+}
+
+.back-button:hover {
+  background-color: #e5e5e5;
+}
+
+/* Main card */
+
+.pin-details-card {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  gap: 40px;
+
+  background-color: white;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+}
+
+/* Image */
+
+.details-image-container {
+  width: 55%;
+}
+
+.details-image-container img {
+  width: 100%;
+
+  max-height: 700px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 20px;
+}
+
+/* Content */
+
+.details-content {
+  flex: 1;
+
+  padding: 30px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+/* Category */
+
+.details-category {
+  color: #777;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+/* Title */
+
+.details-content h1 {
+  font-size: 38px;
+
+  margin: 10px 0 20px;
+}
+
+/* Description */
+
+.details-description {
+  color: #555;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.details-buttons {
+  display: flex;
+
+  gap: 12px;
+}
+
+.details-button {
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 25px;
+
+  background-color: #f1f1f1;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #e5e5e5;
+}
+
+.details-button.liked {
+  background-color: #ffe5e9;
+
+  color: #e60023;
+}
+
+.details-button.saved {
+  background-color: #111;
+
+  color: white;
+}
+
+/* Not found */
+
+.pin-not-found {
+  text-align: center;
+
+  padding-top: 100px;
+}
+
+.pin-not-found button {
+  border: none;
+
+  background-color: #111;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .pin-details {
+    padding: 20px 15px;
+  }
+
+  .pin-details-card {
+    display: block;
+  }
+
+  .details-image-container {
+    width: 100%;
+  }
+
+  .details-content {
+    padding: 25px 10px;
+  }
+
+  .details-content h1 {
+    font-size: 28px;
+  }
+
+}
+/* =========================
+   MANAGE BUTTONS
+========================= */
+
+.manage-buttons {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 25px;
+
+  flex-wrap: wrap;
+}
+
+.edit-button,
+.delete-button,
+.update-button,
+.cancel-button {
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 25px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* Edit */
+
+.edit-button {
+  background-color: #f1f1f1;
+
+  color: #222;
+}
+
+.edit-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Delete */
+
+.delete-button {
+  background-color: #e60023;
+
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c9001f;
+}
+
+/* Update */
+
+.update-button {
+  background-color: #111;
+
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #333;
+}
+
+/* Cancel */
+
+.cancel-button {
+  background-color: #eeeeee;
+
+  color: #333;
+}
+
+/* =========================
+   EDIT FORM
+========================= */
+
+.edit-input,
+.edit-textarea,
+.edit-select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 15px;
+
+  margin: 8px 0 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.edit-input:focus,
+.edit-textarea:focus,
+.edit-select:focus {
+  border-color: #777;
+}
+
+.edit-textarea {
+  min-height: 120px;
+
+  resize: vertical;
+
+  font-family: inherit;
+}

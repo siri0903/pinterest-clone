@@ -1,0 +1,367 @@
+/* ================================
+   HOME PAGE
+================================ */
+
+.home-page {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 35px 30px 60px;
+}
+
+.home-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.home-container h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.home-subtitle {
+  margin-top: 8px;
+  margin-bottom: 25px;
+  color: #666666;
+  font-size: 16px;
+}
+
+
+/* ================================
+   SEARCH BAR
+================================ */
+
+.home-search {
+  display: flex;
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.home-search input {
+  flex: 1;
+  height: 50px;
+  padding: 0 20px;
+
+  border: 1px solid #dddddd;
+  border-radius: 28px;
+
+  outline: none;
+
+  font-size: 16px;
+  color: #222222;
+
+  background: #f5f5f5;
+
+  box-sizing: border-box;
+}
+
+.home-search input::placeholder {
+  color: #777777;
+}
+
+.home-search input:focus {
+  border-color: #999999;
+  background: #ffffff;
+}
+
+.home-search button {
+  height: 50px;
+
+  padding: 0 25px;
+
+  border: none;
+  border-radius: 28px;
+
+  background: #e60023;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.home-search button:hover {
+  background: #c9001f;
+  transform: translateY(-1px);
+}
+
+
+/* ================================
+   SEARCH RESULT
+================================ */
+
+.search-result {
+  margin-bottom: 25px;
+
+  font-size: 16px;
+  color: #555555;
+}
+
+.search-result strong {
+  color: #111111;
+}
+
+
+/* ================================
+   PIN GRID
+================================ */
+
+.pin-grid {
+  columns: 4 250px;
+  column-gap: 20px;
+}
+
+
+/* ================================
+   PIN CARD
+================================ */
+
+.pin-card {
+  display: inline-block;
+
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  break-inside: avoid;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.pin-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ================================
+   IMAGE
+================================ */
+
+.pin-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.pin-image {
+  width: 100%;
+
+  display: block;
+
+  min-height: 220px;
+
+  max-height: 500px;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.pin-card:hover .pin-image {
+  transform: scale(1.03);
+}
+
+
+/* ================================
+   PIN CONTENT
+================================ */
+
+.pin-content {
+  padding: 16px;
+}
+
+.pin-content h3 {
+  margin: 0 0 8px;
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  color: #111111;
+}
+
+.pin-content p {
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.pin-actions {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 15px;
+}
+
+.action-button {
+  border: none;
+
+  padding: 9px 13px;
+
+  border-radius: 22px;
+
+  background: #f1f1f1;
+
+  color: #333333;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.action-button:hover {
+  background: #dddddd;
+}
+
+
+/* LIKED */
+
+.action-button.liked {
+  background: #ffe5ea;
+
+  color: #e60023;
+}
+
+
+/* SAVED */
+
+.action-button.saved {
+  background: #eeeeee;
+
+  color: #111111;
+}
+
+
+/* ================================
+   WEBSITE LINK
+================================ */
+
+.pin-link {
+  display: inline-block;
+
+  margin-top: 13px;
+
+  color: #e60023;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.pin-link:hover {
+  text-decoration: underline;
+}
+
+
+/* ================================
+   NO RESULTS
+================================ */
+
+.no-results {
+  text-align: center;
+
+  padding: 80px 20px;
+}
+
+.no-results h2 {
+  margin-bottom: 10px;
+
+  font-size: 25px;
+
+  color: #222222;
+}
+
+.no-results p {
+  color: #777777;
+
+  font-size: 16px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+  .pin-grid {
+    columns: 3 220px;
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .home-page {
+    padding: 25px 18px 50px;
+  }
+
+  .home-container h1 {
+    font-size: 28px;
+  }
+
+  .home-search {
+    max-width: 100%;
+  }
+
+  .pin-grid {
+    columns: 2 180px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .home-search {
+    flex-direction: column;
+  }
+
+  .home-search input,
+  .home-search button {
+    width: 100%;
+  }
+
+  .pin-grid {
+    columns: 1;
+  }
+
+  .pin-card {
+    margin-bottom: 18px;
+  }
+}

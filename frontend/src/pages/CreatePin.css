@@ -1,0 +1,73 @@
+.create-pin-page {
+  min-height: calc(100vh - 80px);
+  background: #f7f7f7;
+  padding: 40px 20px;
+}
+
+.create-pin-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.create-pin-container h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #111;
+}
+
+.create-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.create-pin-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-pin-container label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+.create-pin-container input,
+.create-pin-container textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.create-pin-container textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-pin-container input:focus,
+.create-pin-container textarea:focus {
+  border-color: #e60023;
+}
+
+.create-pin-container button {
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background: #e60023;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-pin-container button:hover {
+  background: #c9001f;
+}

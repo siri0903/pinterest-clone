@@ -1,0 +1,16 @@
+.pin-grid {
+  columns: 4 220px;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.pin-grid > * {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+.no-pins {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}

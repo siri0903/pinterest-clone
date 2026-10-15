@@ -1,0 +1,232 @@
+/* =========================
+   LIKED PAGE
+========================= */
+
+.liked-page {
+  min-height: 100vh;
+
+  padding: 30px;
+
+  background-color: #ffffff;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.liked-header {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.liked-header h1 {
+  margin-bottom: 8px;
+
+  font-size: 30px;
+}
+
+.liked-header p {
+  color: #777;
+
+  margin: 0;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.liked-grid {
+  columns: 5 200px;
+
+  column-gap: 18px;
+
+  max-width: 1500px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.liked-card {
+  break-inside: avoid;
+
+  margin-bottom: 25px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.liked-image-container {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+}
+
+.liked-image-container img {
+  width: 100%;
+
+  display: block;
+
+  border-radius: 18px;
+
+  transition: transform 0.3s ease;
+}
+
+.liked-card:hover
+.liked-image-container img {
+  transform: scale(1.04);
+}
+
+
+/* =========================
+   UNLIKE BUTTON
+========================= */
+
+.unlike-button {
+  position: absolute;
+
+  top: 12px;
+
+  right: 12px;
+
+  border: none;
+
+  padding: 10px 15px;
+
+  border-radius: 25px;
+
+  background-color: white;
+
+  color: #e60023;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.unlike-button:hover {
+  background-color: #f5f5f5;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.liked-card h3 {
+  margin: 9px 5px 3px;
+
+  font-size: 16px;
+}
+
+.liked-card p {
+  margin: 0 5px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-liked {
+  text-align: center;
+
+  padding: 70px 20px;
+}
+
+.empty-liked-icon {
+  font-size: 60px;
+
+  margin-bottom: 15px;
+}
+
+.empty-liked h2 {
+  margin-bottom: 8px;
+}
+
+.empty-liked p {
+  color: #777;
+
+  margin-bottom: 25px;
+}
+
+.empty-liked button {
+  border: none;
+
+  padding: 12px 22px;
+
+  border-radius: 25px;
+
+  background-color: #111;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.empty-liked button:hover {
+  background-color: #333;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+  .liked-grid {
+    columns: 4 180px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+  .liked-page {
+    padding: 20px 15px;
+  }
+
+  .liked-grid {
+    columns: 3 150px;
+
+    column-gap: 12px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .liked-grid {
+    columns: 2 140px;
+
+    column-gap: 10px;
+  }
+
+  .liked-header h1 {
+    font-size: 25px;
+  }
+}
